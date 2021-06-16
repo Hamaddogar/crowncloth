@@ -1,0 +1,17 @@
+.HeaderCartDropMenu{
+    position: absolute;
+    width: 290px;
+    right: 16px;
+    top: 42px;
+    padding-top: 34px;
+    opacity: 0;
+    visibility: hidden;
+    transition: linear 0.2s all;
+    @media (max-width: 500px) {
+        display: none;
+    }
+    .scrollbar{
+        max-height: 212px;
+        margin-bottom: 16px;
+    }
+}

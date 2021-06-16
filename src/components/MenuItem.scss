@@ -1,0 +1,36 @@
+.menu-item{
+    min-width: 26%;
+    margin: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    .background-image{
+        transition: linear 2s transform; 
+        background-size: cover;
+        .content{
+            margin: auto;
+            text-align: center;
+            padding: 12px;
+            background: rgba($color: #fff, $alpha: 0.7);
+            border-radius: 2px;
+        }
+        &::after{
+            content: '';
+            padding-bottom: 75%;
+            display: block;
+        }
+        &:hover{
+          transform: scale(1.1);
+        }
+        .title{
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+    }
+    @media (max-width: 500px) {
+        min-width: 36%;
+        margin: 4px;
+        .content{
+            padding: 8px;
+        }
+    }
+}

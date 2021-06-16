@@ -1,0 +1,33 @@
+@import '../Colors.scss';
+.HeaderCart{
+    &:hover .HeaderCartDropMenu{
+        opacity: 1;
+        visibility: visible;
+    }
+    cursor: text !important;
+    .shoping-cart{
+        position: relative;
+        img{
+            margin: auto;
+        }
+        span{
+            position: absolute;
+            font-size: 11px;
+            font-weight: normal;
+            min-width: 16px;
+            height: 16px;
+            line-height: 14px;
+            padding: 2px;
+            background: $secondary;
+            color: #fff;
+            text-align: center;
+            border-radius: 16px;
+            top: -8px;
+            left: 12px;
+            @media (max-width: 500px) {
+                top: 2px;
+                left: 50%;
+            }
+        }
+    }
+}

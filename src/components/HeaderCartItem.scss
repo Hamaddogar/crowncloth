@@ -1,0 +1,13 @@
+@import '../Colors.scss';
+.HeaderCartItem{
+    .background{
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 16px;
+    }
+    .price{
+        color: $secondary;
+    }
+}

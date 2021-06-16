@@ -1,0 +1,68 @@
+@import '../Colors.scss';
+.CartItem{
+    background: #fff;
+    .background{
+        flex: 1;
+        max-width: 200px;
+        background-size: cover;
+        div{
+            padding-top: 100%;
+        }
+    }
+    .title{
+        margin-right: auto;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    >span{
+        margin-left: 16px;
+    }
+    .close{
+        margin-right: 16px;
+    }
+    .qty{
+        min-width: 20px;
+        text-align: center;
+    }
+    .totalPrice{
+        width: 54px;
+        text-align: center;
+    }
+    .arrow{
+        cursor: pointer;
+        &::after{
+            content: '';
+            border: solid black;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 4px;
+        }
+        &.left::after{
+            transform: rotate(135deg);
+        }
+        &.right::after{
+            transform: rotate(-45deg);
+        }
+    }
+    @media (max-width: 500px) {
+        font-size: 14px;
+        >span{
+            margin-left: 8px;
+        }
+        .totalPrice{
+            width: 50px;
+        }
+        .close{
+            margin-right: 8px;
+        }
+        .title{
+            flex: 1;
+            margin-left: 8px;
+            font-size: 15px;
+            font-weight: normal;
+        }
+        .qty{
+            min-width: 16px;
+        }
+    }
+}

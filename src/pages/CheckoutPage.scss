@@ -1,0 +1,25 @@
+.CheckoutPage{
+    max-height: calc(100vh - 152px);
+    flex-direction: column;
+    @media (max-width: 500px) {
+        max-height: calc(100vh - 116px);
+        .alert{
+            font-size: 17px;
+        }
+    }
+}
+
+.NothingInCart{
+    height: calc(100vh - 140px);
+    text-align: center;
+    h2{
+        margin: auto;
+    }
+    a{
+        width: 142px;
+        margin: 20px auto 0 auto;
+    }
+    @media (max-width: 500px) {
+        height: calc(100vh - 105px);
+    }
+}

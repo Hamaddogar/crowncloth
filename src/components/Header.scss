@@ -1,0 +1,73 @@
+@import '../Colors.scss';
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+    padding: 10px 16px;
+    .options{
+        >a, .link{
+            margin: 16px 14px;
+            cursor: pointer;
+            display: block;
+        }
+    }
+    .menu-icon{
+        margin: auto 0 auto auto;
+        padding: 6px;
+        background: transparent;
+        display: none;
+    }
+    @media (max-width: 426px) {
+        max-height: 57px;
+        padding: 8px;
+        overflow: hidden;
+        transition: linear 0.3s max-height;
+        &.open{
+            max-height: 1000px !important;
+        }
+        .menu-icon{
+            display: block;
+            span{
+                display: block;
+                width: 18px;
+                margin: 2px 0;
+                height: 3px;
+                background: #000;
+                transition: linear 0.1s transform;
+            }
+            &.close-menu{
+                .rotate{
+                    transform: rotate(135deg);
+                    position: relative;
+                    bottom: -5px;
+                }
+                .norotate{
+                    opacity: 0;
+                }
+                .rotate1{
+                    transform: rotate(45deg);
+                    position: relative;
+                    top: -5px;
+                }
+            }
+        }
+        .options{
+            display: block;
+            margin-top: 8px;
+            >a, .link{
+                padding: 8px;
+                margin: 2px;
+                text-align: center;
+            }
+        }
+    }
+}
+nav{
+    height: 78px;
+    @media (max-width: 426px) {
+        height: 59px;
+    }
+}

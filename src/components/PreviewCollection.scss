@@ -1,0 +1,32 @@
+.PreviewCollection{
+    margin-top: 16px;
+    .CollectionItem{
+        min-width: calc(20% - 32px);
+        margin: 16px;
+    }
+    .preview{
+        margin: 0 -16px;
+        @media (max-width: 1400px) {
+            .CollectionItem{
+                min-width: calc(25% - 32px);
+            }
+        }
+        @media (max-width: 800px) {
+            .CollectionItem{
+                min-width: calc(33.3333% - 32px);
+            }
+        }
+        @media (max-width: 500px) {
+                margin: 0 -4px;
+            .CollectionItem{
+                width: calc(50% - 8px);
+                margin: 4px;
+            }
+        }
+        @media (max-width: 350px) {
+            .CollectionItem{
+                width: calc(100% - 8px);
+            }
+        }
+    }
+}

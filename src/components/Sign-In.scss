@@ -1,0 +1,59 @@
+@import '../Colors.scss';
+
+.Sign-In{
+    border-radius: 3px;
+    padding: 20px;
+    width: 340px;
+    @media (max-width: 390px) {
+        width: calc(100% - 32px);
+    }
+    img{
+        display: block;
+        margin: 24px auto;
+        width: 80px;
+    }
+    button{
+        width: 100%;
+        margin-top: 8px;
+    }
+    p{
+        text-align: center;
+        font-weight: 500;
+        margin: 8px 0;
+    }
+    .alert{
+        color: $danger;
+        font-size: 14px;
+    }
+    .close{
+        float: right;
+        cursor: pointer;
+        padding: 6px;
+        position: relative;
+        right: -6px;
+        top: -6px;
+    }
+    .signup{
+        color: $secondary;
+        font-size: 14px;
+        margin-top: 3px;
+        display: block;
+        cursor: pointer;
+    }
+    .btn{
+        text-align: center;
+        i{
+            min-width: 30px;
+        }
+        span{
+            margin-right: 30px;
+        }
+        &.facebook{
+            background: #4267B2;
+            margin-top: 8px;
+        }
+        &.google{
+            background: #DB4437;
+        }
+    }
+}
